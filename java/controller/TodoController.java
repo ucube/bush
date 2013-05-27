@@ -25,7 +25,7 @@ public class TodoController {
 		model.put("message", message);
 		model.addAttribute("listMap", todoService.getList());
 		
-		logger.info(message);
+		logger.info("===================="+message);
 		
 		return "Todo/list";
 	}
