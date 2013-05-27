@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="TodoBoard">
+
+	<select id="selectTB" resultType="vo.TodoVO">
+		SELECT 
+			NUM, 
+			TITLE, 
+			REPLACE(REPLACE(CONTENT,CHR(10), ' '),CHR(13), ' ') AS CONTENT,
+			REG_DATE, 
+			END, 
+			END_DATE, 
+			SCHEDULE 
+		FROM TODO_BOARD
+		ORDER BY NUM DESC
+	</select>
+
+
+</mapper>
