@@ -25,7 +25,7 @@ public class HelloWorldController {
 		return mav;
 	}
 	
-	@RequestMapping("/search")
+/*	@RequestMapping("/search")
 	public String search(HttpServletRequest request, HttpServletResponse response){
 		
 		String keyword = request.getParameter("keyword");
@@ -33,6 +33,6 @@ public class HelloWorldController {
 		//logger.info(keyword);
 		
 		return keyword;
-	}
+	}*/
 	
 }
